@@ -1,0 +1,439 @@
+@CHARSET "ISO-8859-1";
+html { 
+  background: url("clouds.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.heading {
+	
+	background: #7E9F35;
+	border-radius: 5px;
+	border-bottom-color: black;
+	border-bottom-width: 5px;
+	border-bottom-style: outset;
+	position: absolute;
+	height: 200px;
+	top:0;
+	left: 0;
+	right: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#cssmenu {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+#cssmenu > ul {
+  list-style-type: none;
+  padding: 0;
+  background: #151710;
+  border: 1px solid #151710;
+  border-bottom: 3px solid #151710;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
+  top: 185px;
+  left: 0;
+  right: 0;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+#cssmenu > ul li.has-sub {
+  position: relative;
+}
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #151710;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  border-top: 0 none;
+}
+#cssmenu > ul li.has-sub ul li {
+  display: block;
+}
+#cssmenu > ul li.has-sub > a {
+  background-image: url('images/caret.png');
+  background-repeat: no-repeat;
+  background-position: 90% -95%;
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+  background: #d80041 url('images/caret.png') no-repeat;
+  background-position: 90% 195%;
+}
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0px 1px 0px #151710;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  background: #d80041;
+  color: #fff;
+  text-shadow: 0px 1px 0px #000;
+}
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+    background: url('images/menu.png') no-repeat;
+    background-position: 95% -35%;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #d80041;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+  #cssmenu > ul li.has-sub {
+    position: relative;
+  }
+  #cssmenu > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ffffff;
+    border: 0 none;
+  }
+  #cssmenu > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #cssmenu > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  #cssmenu > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+
+.primary_pic {
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	margin-top: 280px;
+}
+
+.primary_pic img{
+	width: 100%;
+	height: 320px;
+}
+.banner {
+	background: #7E9F35;
+	border-radius: 5px;
+	border-bottom-color: black;
+	border-bottom-width: 5px;
+	border-bottom-style: outset;
+	position: absolute;
+	width: 75%;
+	height: 100px;
+	margin-top: 590px;
+	left: 12.5%;
+}
+
+.secondary_pics {
+	position: absolute;
+	left: 12%;
+	right: 10%;
+	margin-top: 250px;
+}
+
+.secondary_pics img {
+	display: inline-block;
+	margin-top: 440px;
+	align: center;
+	margin-left: 20px;
+	
+	width: 290px;
+	height: 220px;
+}
+
+.title {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 32px;
+	color: white;
+	background: #324900;
+	height: 70px;
+	margin-top: 245px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.title1 {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	color: white;
+	background: #324900;
+	height: 100px;
+	margin-top: 245px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	text-align: center;
+}
+
+#about_us {
+	margin-left: 50px;
+}
+
+.about_text {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 24px;
+	color: white;
+	background: #EDF1E6;
+	top: 324px;
+	left: 0;
+	right: 50%;
+	height: 640px;
+	position: absolute;
+	padding-left: 45px;
+	//border: 5px solid black;
+}
+
+.about_pic {
+	left: 50%;
+	height: 640px;
+	top: 324px;
+	right: 0;
+	position: absolute;
+	background: #EDF1E6;
+	//border: 5px solid black;
+}
+
+.about_pic img {
+	width: 450px;
+	height: 350px;
+	position: absolute;
+	margin-left: 68px;
+	margin-top: 30px;
+	background: #324900;
+}
+
+.pictures1 {
+	position: absolute;
+	left: 12.5%;
+	right: 10%;
+	margin-top: 150px;
+}
+
+.description1 {
+	position: absolute;
+	left: 12.5%;
+	right: 10%;
+	margin-top: 520px;
+	font-size: 20px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.pictures1 img {
+	display: inline-block;
+	margin-top: 180px;
+	align: center;
+	margin-left: 20px;
+	
+	width: 290px;
+	height: 220px;
+}
+
+.pictures2 {
+	position: absolute;
+	left: 12.5%;
+	right: 10%;
+	margin-top: 200px;
+}
+
+.description2 {
+	position: absolute;
+	left: 12.5%;
+	right: 10%;
+	margin-top: 800px;
+	font-size: 20px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.pictures2 img {
+	display: inline-block;
+	margin-top: 400px;
+	align: center;
+	margin-left: 20px;
+	
+	width: 290px;
+	height: 220px;
+}
+
+
+.form_volunteer {
+	left: 0;
+	right: 0;
+	height: 600px;
+	margin-top: 328px;
+	position: absolute;
+	/*background: #cd4001;*/
+	border: 5px solid black;
+}
+
+.form_volunteer form {
+	left: 25%;
+	width: 600px;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: absolute;
+	/*background: #cd4001;*/
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+}
+
+.form_volunteer form > select {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+}
+
+.form_contact {
+	left: 0;
+	right: 0;
+	height: 600px;
+	margin-top: 298px;
+	position: absolute;
+	/*background: #cd4001;*/
+	border: 5px solid black;
+	border-right: none;
+}
+
+.form_contact form {
+	width: 400px;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: absolute;
+	/*background: #cd4001;*/
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+}
+.contact_info {
+	left: 50%;
+	right: 0;
+	height: 300px;
+	margin-top: 298px;
+	padding-top: 20px;
+	position: absolute;
+	/*background: #cd4001;*/
+	border: 5px solid black;
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+}
+
+.contact_info img {
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	background: #cd4001;
+	border: 5px solid black;
+}
+
+.donate_pics {
+	left: 0;
+	right: 0;
+	height: 600px;
+	margin-top: 298px;
+	position: absolute;
+	border: 5px solid black;
+	border-right: none;
+}
+
+.donate_pics img {
+	width: 450px;
+	height: 180px;
+	position: relative;
+	margin-left: 68px;
+	margin-top: 10px;
+}
+
+.form_donate {
+	left: 50%;
+	height: 600px;
+	margin-top: 298px;
+	position: absolute;
+	border: 5px solid black;
+	border-right: none;
+}
+
+.form_donate form {
+	width: 400px;
+	margin-left: 120px;
+	margin-top: 20px;
+	position: absolute;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 70px;
+	background: black;
+	top: 964px;
+	border-radius: 5px;
+}
+
+#developers {
+	color: white;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	//padding-top: 25px;
+}
